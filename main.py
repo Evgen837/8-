@@ -42,6 +42,9 @@
 #             return True
 #         else:
 #             return False
+
+#     def letters_num(self):
+#         return EngAlphabet.__letters_num
 #
 #     @staticmethod
 #     def example():
@@ -101,7 +104,7 @@
 #             return True
 #         return False
 #
-#     # Защищенные(protected) методы
+#     # protected методы
 #
 #     def _change_state(self):
 #         if self._state < 3:
@@ -130,7 +133,6 @@
 #     # Собираем урожай
 #     def give_away_all(self):
 #         self.tomatoes = []
-#
 #
 # class Gardener:
 #
@@ -204,6 +206,7 @@
 #         print(f'Age: {self.age}')
 #         print(f'Money: {self.__money}')
 #         print(f'House: {self.__house}')
+#
 #     @staticmethod
 #     def default_info():
 #         print(f'Default Name: {Human.default_name}')
@@ -245,17 +248,12 @@
 # if __name__ == '__main__':
 #
 #     Human.default_info()
-#
 #     alexander = Human('Sasha', 27)
 #     alexander.info()
-#
 #     small_house = SmallHouse(8_500)
-#
 #     alexander.buy_house(small_house, 5)
-#
 #     alexander.earn_money(5_000)
 #     alexander.buy_house(small_house, 5)
-#
 #     alexander.earn_money(20_000)
 #     alexander.buy_house(small_house, 5)
 #     alexander.info()
